@@ -1,5 +1,6 @@
 package com.study.jpa.chap05_practice.api;
 
+import com.study.jpa.chap05_practice.service.PostService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,5 +20,5 @@ public class PostApiController {
         게시물 수정:     /posts/{id}       - PATCH
         게시물 삭제:     /posts/{id}       - DELETE
      */
-
+    private final PostService postService;
 }
